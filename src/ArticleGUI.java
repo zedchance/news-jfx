@@ -45,17 +45,27 @@ public class ArticleGUI extends Application
    @FXML
    ImageView iv1, iv2, iv3, iv4, iv5;
 
+   /*
+    * Fields
+    */
+   String link1, link2, link3, link4, link5;
+
+   /**
+    * Start window and canvas
+    * @param window
+    * @throws IOException
+    */
    public void start(Stage window) throws IOException
    {
-      /*
-       * Window and canvas
-       */
       Parent root = FXMLLoader.load(getClass().getResource("article-gui.fxml"));
       window.setTitle("Article-GUI");
       window.setScene(new Scene(root));
       window.show();
    }
 
+   /**
+    * Handles the fetch button
+    */
    public void handleFetch(ActionEvent ae)
    {
       // Fetch articles
@@ -70,6 +80,7 @@ public class ArticleGUI extends Application
       Image i1 = new Image(f.getUrlToImage(0));
       iv1.setImage(i1);
       hl1.setText(f.getSource(0));
+      link1 = f.getUrl(0);
 
       tp2.setText(f.getTitle(1));
       lblTitle2.setText(f.getTitle(1));
@@ -79,6 +90,7 @@ public class ArticleGUI extends Application
       Image i2 = new Image(f.getUrlToImage(1));
       iv2.setImage(i2);
       hl2.setText(f.getSource(1));
+      link2 = f.getUrl(1);
 
       tp3.setText(f.getTitle(2));
       lblTitle3.setText(f.getTitle(2));
@@ -88,6 +100,7 @@ public class ArticleGUI extends Application
       Image i3 = new Image(f.getUrlToImage(2));
       iv3.setImage(i3);
       hl3.setText(f.getSource(2));
+      link3 = f.getUrl(2);
 
       tp4.setText(f.getTitle(3));
       lblTitle4.setText(f.getTitle(3));
@@ -97,6 +110,7 @@ public class ArticleGUI extends Application
       Image i4 = new Image(f.getUrlToImage(3));
       iv4.setImage(i4);
       hl4.setText(f.getSource(3));
+      link4 = f.getUrl(3);
 
       tp5.setText(f.getTitle(4));
       lblTitle5.setText(f.getTitle(4));
@@ -106,7 +120,49 @@ public class ArticleGUI extends Application
       Image i5 = new Image(f.getUrlToImage(4));
       iv5.setImage(i5);
       hl5.setText(f.getSource(4));
+      link5 = f.getUrl(4);
 
       accordion.setVisible(true);
+      tp1.setExpanded(true);
+   }
+
+   /**
+    * Handles link 1
+    */
+   public void handleLink1(ActionEvent ae)
+   {
+      getHostServices().showDocument(link1);
+   }
+
+   /**
+    * Handles link 2
+    */
+   public void handleLink2(ActionEvent ae)
+   {
+      getHostServices().showDocument(link2);
+   }
+
+   /**
+    * Handles link 3
+    */
+   public void handleLink3(ActionEvent ae)
+   {
+      getHostServices().showDocument(link3);
+   }
+
+   /**
+    * Handles link 4
+    */
+   public void handleLink4(ActionEvent ae)
+   {
+      getHostServices().showDocument(link4);
+   }
+
+   /**
+    * Handles link 5
+    */
+   public void handleLink5(ActionEvent ae)
+   {
+      getHostServices().showDocument(link5);
    }
 }

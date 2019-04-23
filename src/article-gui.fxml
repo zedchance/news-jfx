@@ -36,7 +36,7 @@
                         <Label fx:id="lblAuthor1" layoutX="15.0" layoutY="82.0" prefHeight="17.0" prefWidth="330.0" text="Author xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
                         <Label fx:id="lblPub1" alignment="CENTER_RIGHT" layoutX="9.0" layoutY="376.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv1" fitHeight="150.0" fitWidth="150.0" layoutX="420.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl1" layoutX="9.0" layoutY="99.0" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl1" layoutX="9.0" layoutY="99.0" onAction="#handleLink1" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent1" alignment="TOP_LEFT" layoutX="15.0" layoutY="157.0" prefHeight="208.0" prefWidth="544.0" text="Content x xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -54,7 +54,7 @@
                         <Label fx:id="lblAuthor2" layoutX="17.0" layoutY="87.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub2" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="377.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv2" fitHeight="150.0" fitWidth="150.0" layoutX="413.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl2" layoutX="13.0" layoutY="104.0" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl2" layoutX="13.0" layoutY="104.0" onAction="#handleLink2" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent2" alignment="TOP_LEFT" layoutX="17.0" layoutY="172.0" prefHeight="208.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -72,7 +72,7 @@
                         <Label fx:id="lblAuthor3" layoutX="17.0" layoutY="82.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub3" alignment="CENTER_RIGHT" layoutX="17.0" layoutY="376.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv3" fitHeight="150.0" fitWidth="150.0" layoutX="413.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl3" layoutX="12.0" layoutY="99.0" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl3" layoutX="12.0" layoutY="99.0" onAction="#handleLink3" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent3" alignment="TOP_LEFT" layoutX="17.0" layoutY="167.0" prefHeight="208.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -90,7 +90,7 @@
                         <Label fx:id="lblAuthor4" layoutX="17.0" layoutY="81.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub4" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="379.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv4" fitHeight="150.0" fitWidth="150.0" layoutX="411.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl4" layoutX="13.0" layoutY="98.0" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl4" layoutX="13.0" layoutY="98.0" onAction="#handleLink4" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent4" alignment="TOP_LEFT" layoutX="17.0" layoutY="169.0" prefHeight="208.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -108,7 +108,7 @@
                         <Label fx:id="lblAuthor5" layoutX="17.0" layoutY="81.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub5" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="383.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv5" fitHeight="150.0" fitWidth="150.0" layoutX="413.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl5" layoutX="13.0" layoutY="93.0" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl5" layoutX="13.0" layoutY="95.0" onAction="#handleLink5" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent5" alignment="TOP_LEFT" layoutX="17.0" layoutY="174.0" prefHeight="208.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
