@@ -40,7 +40,7 @@ public class Article
 
       source = f.getSource(index);
       author = f.getAuthor(index);
-      title = f.getAuthor(index);
+      title = f.getTitle(index);
       description = f.getDescription(index);
       url = f.getUrl(index);
       urlToImage = f.getUrlToImage(index);
