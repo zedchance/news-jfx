@@ -12,10 +12,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ArticleGUI">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="600.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ArticleGUI">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="News-GUI">
+      <Label layoutX="14.0" layoutY="14.0" style="-fx-font-family: &quot;HelveticaNeue-Light&quot;&quot;HelveticaNeue-Thin&quot;; -fx-font-style: italic;" text="News-GUI">
          <font>
             <Font size="25.0" />
          </font>
@@ -29,15 +28,15 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="577.0">
                      <children>
-                        <Label fx:id="lblTitle1" alignment="TOP_LEFT" layoutX="13.0" layoutY="14.0" prefHeight="68.0" prefWidth="389.0" text="Title xxxxxxx xxxx xxxxxx xxxxxx xxxxxxx xxxxx xxxxxxxx xxxxxx xxxxxxxxxxxx" wrapText="true">
+                        <Label fx:id="lblTitle1" alignment="TOP_LEFT" layoutX="13.0" layoutY="14.0" prefHeight="90.0" prefWidth="389.0" text="Title xxxxxxx xxxx xxxxxx xxxxxx xxxxxxx xxxxx xxxxxxxx xxxxxx xxxxxxxxxxxx" wrapText="true">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblAuthor1" layoutX="15.0" layoutY="82.0" prefHeight="17.0" prefWidth="330.0" text="Author xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+                        <Label fx:id="lblAuthor1" layoutX="15.0" layoutY="101.0" prefHeight="17.0" prefWidth="330.0" text="Author xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
                         <Label fx:id="lblPub1" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="282.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv1" fitHeight="150.0" fitWidth="150.0" layoutX="420.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl1" layoutX="9.0" layoutY="99.0" onAction="#handleLink1" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl1" layoutX="9.0" layoutY="118.0" onAction="#handleLink1" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent1" alignment="TOP_LEFT" layoutX="15.0" layoutY="157.0" prefHeight="123.0" prefWidth="544.0" text="Content x xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -47,15 +46,15 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="lblTitle2" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="68.0" prefWidth="389.0" text="Title" wrapText="true">
+                        <Label fx:id="lblTitle2" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="90.0" prefWidth="389.0" text="Title" wrapText="true">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblAuthor2" layoutX="17.0" layoutY="87.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
+                        <Label fx:id="lblAuthor2" layoutX="17.0" layoutY="108.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub2" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="272.0" prefHeight="30.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv2" fitHeight="150.0" fitWidth="150.0" layoutX="413.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl2" layoutX="13.0" layoutY="104.0" onAction="#handleLink2" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl2" layoutX="13.0" layoutY="125.0" onAction="#handleLink2" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent2" alignment="TOP_LEFT" layoutX="17.0" layoutY="172.0" prefHeight="106.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -65,15 +64,15 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="lblTitle3" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="68.0" prefWidth="389.0" text="Title" wrapText="true">
+                        <Label fx:id="lblTitle3" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="90.0" prefWidth="389.0" text="Title" wrapText="true">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblAuthor3" layoutX="17.0" layoutY="82.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
+                        <Label fx:id="lblAuthor3" layoutX="17.0" layoutY="106.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub3" alignment="CENTER_RIGHT" layoutX="17.0" layoutY="282.0" prefHeight="27.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv3" fitHeight="150.0" fitWidth="150.0" layoutX="413.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl3" layoutX="12.0" layoutY="99.0" onAction="#handleLink3" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl3" layoutX="12.0" layoutY="123.0" onAction="#handleLink3" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent3" alignment="TOP_LEFT" layoutX="17.0" layoutY="167.0" prefHeight="119.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -83,15 +82,15 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="lblTitle4" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="68.0" prefWidth="389.0" text="Title" wrapText="true">
+                        <Label fx:id="lblTitle4" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="90.0" prefWidth="389.0" text="Title" wrapText="true">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblAuthor4" layoutX="17.0" layoutY="81.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
+                        <Label fx:id="lblAuthor4" layoutX="17.0" layoutY="106.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub4" alignment="CENTER_RIGHT" layoutX="17.0" layoutY="287.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv4" fitHeight="150.0" fitWidth="150.0" layoutX="411.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl4" layoutX="13.0" layoutY="98.0" onAction="#handleLink4" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl4" layoutX="13.0" layoutY="123.0" onAction="#handleLink4" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent4" alignment="TOP_LEFT" layoutX="17.0" layoutY="169.0" prefHeight="119.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -101,15 +100,15 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="lblTitle5" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="68.0" prefWidth="389.0" text="Title" wrapText="true">
+                        <Label fx:id="lblTitle5" alignment="TOP_LEFT" layoutX="17.0" layoutY="14.0" prefHeight="90.0" prefWidth="389.0" text="Title" wrapText="true">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblAuthor5" layoutX="17.0" layoutY="81.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
+                        <Label fx:id="lblAuthor5" layoutX="17.0" layoutY="105.0" prefHeight="17.0" prefWidth="330.0" text="Author" />
                         <Label fx:id="lblPub5" alignment="CENTER_RIGHT" layoutX="17.0" layoutY="287.0" prefHeight="17.0" prefWidth="545.0" text="Published at: " />
                         <ImageView fx:id="iv5" fitHeight="150.0" fitWidth="150.0" layoutX="413.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                        <Hyperlink fx:id="hl5" layoutX="13.0" layoutY="95.0" onAction="#handleLink5" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
+                        <Hyperlink fx:id="hl5" layoutX="13.0" layoutY="119.0" onAction="#handleLink5" prefHeight="25.0" prefWidth="301.0" text="Hyperlink" />
                         <Label fx:id="lblContent5" alignment="TOP_LEFT" layoutX="17.0" layoutY="174.0" prefHeight="112.0" prefWidth="544.0" text="Content" wrapText="true" />
                      </children>
                   </AnchorPane>
@@ -117,6 +116,6 @@
             </TitledPane>
         </panes>
       </Accordion>
-      <ProgressBar fx:id="pb" layoutX="155.0" layoutY="20.0" prefHeight="20.0" prefWidth="131.0" progress="0.0" visible="false" />
+      <ProgressBar fx:id="pb" layoutX="155.0" layoutY="20.0" prefHeight="20.0" prefWidth="131.0" visible="false" />
    </children>
 </Pane>
