@@ -77,7 +77,7 @@ public class FetchArticle
 
    /**
     * Gets id of article from query at current index
-    * @param index
+    * @param index of article
     * @return id
     */
    public String getId(int index)
@@ -88,7 +88,7 @@ public class FetchArticle
 
    /**
     * Gets source of article from query at current index
-    * @param index
+    * @param index of article
     * @return source
     */
    public String getSource(int index)
@@ -99,18 +99,18 @@ public class FetchArticle
 
    /**
     * Gets author of article from query at current index
-    * @param index
+    * @param index of article
     * @return author
     */
    public String getAuthor(int index)
    {
       return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
-              .getAsJsonObject().get("author").getAsString();
+                    .getAsJsonObject().get("author").getAsString();
    }
 
    /**
     * Gets title of article from query at current index
-    * @param index
+    * @param index of article
     * @return title
     */
    public String getTitle(int index)
@@ -121,57 +121,57 @@ public class FetchArticle
 
    /**
     * Gets description of article from query at current index
-    * @param index
+    * @param index of article
     * @return description
     */
    public String getDescription(int index)
    {
       return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
-              .getAsJsonObject().get("description").getAsString();
+                    .getAsJsonObject().get("description").getAsString();
    }
 
    /**
     * Gets url of article from query at current index
-    * @param index
+    * @param index of article
     * @return url
     */
    public String getUrl(int index)
    {
       return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
-              .getAsJsonObject().get("url").getAsString();
+                    .getAsJsonObject().get("url").getAsString();
    }
 
    /**
     * Gets urlToImage of article from query at current index
-    * @param index
+    * @param index of article
     * @return urlToImage
     */
    public String getUrlToImage(int index)
    {
       return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
-              .getAsJsonObject().get("urlToImage").getAsString();
+                    .getAsJsonObject().get("urlToImage").getAsString();
    }
 
    /**
     * Gets publishedAt of article from query at current index
-    * @param index
+    * @param index of article
     * @return publishedAt
     */
    public String getPublishedAt(int index)
    {
       return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
-              .getAsJsonObject().get("publishedAt").getAsString();
+                    .getAsJsonObject().get("publishedAt").getAsString();
    }
 
    /**
     * Gets content of article from query at current index
-    * @param index
+    * @param index of article
     * @return content
     */
    public String getContent(int index)
    {
       return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
-              .getAsJsonObject().get("content").getAsString();
+                    .getAsJsonObject().get("content").getAsString();
    }
 
    public String toString()
