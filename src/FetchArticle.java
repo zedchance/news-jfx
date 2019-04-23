@@ -1,12 +1,10 @@
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 
 /**
  * Fetches article and related data from NewsAPI
@@ -31,11 +29,18 @@ public class FetchArticle
     */
    public FetchArticle(String q)
    {
-      query = q;
+      try
+      {
+         query = URLEncoder.encode(q, "UTF-8");
+      }
+      catch (UnsupportedEncodingException e)
+      {
+         e.printStackTrace();
+      }
 
       // Build url
       final String API_KEY = "b0de17f6ecae47eca5f8ced26a4026dc";
-      String urlString = "https://newsapi.org/v2/everything?q=" + q + "&apiKey=" + API_KEY;
+      String urlString = "https://newsapi.org/v2/everything?q=" + query + "&apiKey=" + API_KEY;
 
       // Fetch articles
       try
