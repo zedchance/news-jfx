@@ -16,19 +16,14 @@ import java.net.URL;
 public class FetchArticle
 {
    /**
-    * API key for NewsAPI.org
-    */
-   private final String API_KEY = "b0de17f6ecae47eca5f8ced26a4026dc";
-
-   /**
     * Query for search
     */
-   String query;
+   private String query;
 
    /**
     * JsonElement which contains all results from query
     */
-   JsonElement results;
+   private JsonElement results;
 
    /**
     * Constructs a FetchArticle object containing a query
@@ -39,6 +34,7 @@ public class FetchArticle
       query = q;
 
       // Build url
+      final String API_KEY = "b0de17f6ecae47eca5f8ced26a4026dc";
       String urlString = "https://newsapi.org/v2/everything?q=" + q + "&apiKey=" + API_KEY;
 
       // Fetch articles
@@ -65,6 +61,11 @@ public class FetchArticle
       }
    }
 
+   public String getStatus()
+   {
+      return results.getAsJsonObject().get("status").getAsString();
+   }
+
    /**
     * Returns total results from query
     * @return total results as int
@@ -72,6 +73,39 @@ public class FetchArticle
    public int getTotalResults()
    {
       return results.getAsJsonObject().get("totalResults").getAsInt();
+   }
+
+   /**
+    * Gets id of article from query at current index
+    * @param index
+    * @return id
+    */
+   public String getId(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+                    .getAsJsonObject().get("source").getAsJsonObject().get("id").getAsString();
+   }
+
+   /**
+    * Gets source of article from query at current index
+    * @param index
+    * @return source
+    */
+   public String getSource(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+                    .getAsJsonObject().get("source").getAsJsonObject().get("name").getAsString();
+   }
+
+   /**
+    * Gets author of article from query at current index
+    * @param index
+    * @return author
+    */
+   public String getAuthor(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+              .getAsJsonObject().get("author").getAsString();
    }
 
    /**
@@ -85,8 +119,64 @@ public class FetchArticle
                     .getAsJsonObject().get("title").getAsString();
    }
 
+   /**
+    * Gets description of article from query at current index
+    * @param index
+    * @return description
+    */
+   public String getDescription(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+              .getAsJsonObject().get("description").getAsString();
+   }
+
+   /**
+    * Gets url of article from query at current index
+    * @param index
+    * @return url
+    */
+   public String getUrl(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+              .getAsJsonObject().get("url").getAsString();
+   }
+
+   /**
+    * Gets urlToImage of article from query at current index
+    * @param index
+    * @return urlToImage
+    */
+   public String getUrlToImage(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+              .getAsJsonObject().get("urlToImage").getAsString();
+   }
+
+   /**
+    * Gets publishedAt of article from query at current index
+    * @param index
+    * @return publishedAt
+    */
+   public String getPublishedAt(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+              .getAsJsonObject().get("publishedAt").getAsString();
+   }
+
+   /**
+    * Gets content of article from query at current index
+    * @param index
+    * @return content
+    */
+   public String getContent(int index)
+   {
+      return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
+              .getAsJsonObject().get("content").getAsString();
+   }
+
    public String toString()
    {
-      return "Query: " + query + " (" + getTotalResults() + " total results)";
+      return "Status: " + getStatus() + ", " + "Query: " + query +
+             " (" + getTotalResults() + " total results)";
    }
 }

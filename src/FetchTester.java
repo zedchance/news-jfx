@@ -4,14 +4,20 @@ public class FetchTester
    {
       // Create FetchArticle object
       FetchArticle f = new FetchArticle("Apple");
-
-      // Test toString() (also tests getTotalResults())
       System.out.println(f.toString());
 
-      // Test getTitle()
-      for (int i = 0; i < 10; i++)
-      {
-         System.out.println("" + i + " " + f.getTitle(i));
-      }
+      // Test article data
+      System.out.println("Data for article 0");
+      System.out.println("Source: " + f.getSource(0));
+      System.out.println("ID: " + f.getId(0));
+      System.out.println("Author: " + f.getAuthor(0));
+      System.out.println("Title: " + f.getTitle(0));
+      System.out.println("Description: " + f.getDescription(0));
+      System.out.println("URL: " + f.getUrl(0));
+      System.out.println("URL to image: " + f.getUrlToImage(0));
+      System.out.println("Published at: " + f.getPublishedAt(0));
+      System.out.println("Content: " + f.getContent(0));
+
+
    }
 }
