@@ -32,7 +32,7 @@ public class FetchArticle
    public FetchArticle(String query)
    {
       // Build url
-      String urlString = "https://newsapi.org/v2/everything?q=" + query + "&API_KEY=" + API_KEY;
+      String urlString = "https://newsapi.org/v2/everything?q=" + query + "&apiKey=" + API_KEY;
 
       // Fetch articles
       try
