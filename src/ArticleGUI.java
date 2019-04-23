@@ -68,7 +68,9 @@ public class ArticleGUI extends Application
     */
    public void handleFetch(ActionEvent ae)
    {
-      // Fetch articles
+      accordion.setVisible(false);
+
+      // Fetch article object
       FetchArticle f = new FetchArticle(tfSearch.getText());
 
       // Set articles
@@ -76,7 +78,7 @@ public class ArticleGUI extends Application
       lblTitle1.setText(f.getTitle(0));
       lblAuthor1.setText(f.getAuthor(0));
       lblPub1.setText(f.getPublishedAt(0));
-      lblContent1.setText(f.getContent(0));
+      lblContent1.setText(f.getDescription(0));
       Image i1 = new Image(f.getUrlToImage(0));
       iv1.setImage(i1);
       hl1.setText(f.getSource(0));
@@ -86,7 +88,7 @@ public class ArticleGUI extends Application
       lblTitle2.setText(f.getTitle(1));
       lblAuthor2.setText(f.getAuthor(1));
       lblPub2.setText(f.getPublishedAt(1));
-      lblContent2.setText(f.getContent(1));
+      lblContent2.setText(f.getDescription(1));
       Image i2 = new Image(f.getUrlToImage(1));
       iv2.setImage(i2);
       hl2.setText(f.getSource(1));
@@ -96,7 +98,7 @@ public class ArticleGUI extends Application
       lblTitle3.setText(f.getTitle(2));
       lblAuthor3.setText(f.getAuthor(2));
       lblPub3.setText(f.getPublishedAt(2));
-      lblContent3.setText(f.getContent(2));
+      lblContent3.setText(f.getDescription(2));
       Image i3 = new Image(f.getUrlToImage(2));
       iv3.setImage(i3);
       hl3.setText(f.getSource(2));
@@ -106,7 +108,7 @@ public class ArticleGUI extends Application
       lblTitle4.setText(f.getTitle(3));
       lblAuthor4.setText(f.getAuthor(3));
       lblPub4.setText(f.getPublishedAt(3));
-      lblContent4.setText(f.getContent(3));
+      lblContent4.setText(f.getDescription(3));
       Image i4 = new Image(f.getUrlToImage(3));
       iv4.setImage(i4);
       hl4.setText(f.getSource(3));
@@ -116,7 +118,7 @@ public class ArticleGUI extends Application
       lblTitle5.setText(f.getTitle(4));
       lblAuthor5.setText(f.getAuthor(4));
       lblPub5.setText(f.getPublishedAt(4));
-      lblContent5.setText(f.getContent(4));
+      lblContent5.setText(f.getDescription(4));
       Image i5 = new Image(f.getUrlToImage(4));
       iv5.setImage(i5);
       hl5.setText(f.getSource(4));

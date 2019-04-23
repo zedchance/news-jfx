@@ -19,7 +19,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="tfSearch" layoutX="300.0" layoutY="16.0" prefHeight="27.0" prefWidth="219.0" text="Search" />
+      <TextField fx:id="tfSearch" layoutX="300.0" layoutY="16.0" prefHeight="27.0" prefWidth="219.0" promptText="Search (i.e. Google, Apple)" />
       <Button fx:id="btnFetch" defaultButton="true" layoutX="527.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleFetch" prefHeight="27.0" prefWidth="59.0" text="Fetch" />
       <Label alignment="CENTER" layoutX="235.0" layoutY="68.0" prefHeight="57.0" prefWidth="131.0" text="Use the search bar to find articles" textAlignment="CENTER" wrapText="true" />
       <Accordion fx:id="accordion" layoutX="11.0" layoutY="50.0" prefHeight="445.0" prefWidth="579.0" visible="false">
