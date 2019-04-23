@@ -21,18 +21,25 @@ public class FetchArticle
    private final String API_KEY = "b0de17f6ecae47eca5f8ced26a4026dc";
 
    /**
+    * Query for search
+    */
+   String query;
+
+   /**
     * JsonElement which contains all results from query
     */
    JsonElement results;
 
    /**
     * Constructs a FetchArticle object containing a query
-    * @param query
+    * @param q query to search
     */
-   public FetchArticle(String query)
+   public FetchArticle(String q)
    {
+      query = q;
+
       // Build url
-      String urlString = "https://newsapi.org/v2/everything?q=" + query + "&apiKey=" + API_KEY;
+      String urlString = "https://newsapi.org/v2/everything?q=" + q + "&apiKey=" + API_KEY;
 
       // Fetch articles
       try
@@ -56,11 +63,19 @@ public class FetchArticle
       {
          e.printStackTrace();
       }
-
    }
 
    /**
-    * Gets title of article from current index
+    * Returns total results from query
+    * @return total results as int
+    */
+   public int getTotalResults()
+   {
+      return results.getAsJsonObject().get("totalResults").getAsInt();
+   }
+
+   /**
+    * Gets title of article from query at current index
     * @param index
     * @return title
     */
@@ -68,5 +83,10 @@ public class FetchArticle
    {
       return results.getAsJsonObject().get("articles").getAsJsonArray().get(index)
                     .getAsJsonObject().get("title").getAsString();
+   }
+
+   public String toString()
+   {
+      return "Query: " + query + " (" + getTotalResults() + " total results)";
    }
 }
