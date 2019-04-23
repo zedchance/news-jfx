@@ -7,17 +7,16 @@ public class FetchTester
       System.out.println(f.toString());
 
       // Test article data
-      System.out.println("Data for article 0");
-      System.out.println("Source: " + f.getSource(0));
-      System.out.println("ID: " + f.getId(0));
-      System.out.println("Author: " + f.getAuthor(0));
-      System.out.println("Title: " + f.getTitle(0));
-      System.out.println("Description: " + f.getDescription(0));
-      System.out.println("URL: " + f.getUrl(0));
-      System.out.println("URL to image: " + f.getUrlToImage(0));
-      System.out.println("Published at: " + f.getPublishedAt(0));
-      System.out.println("Content: " + f.getContent(0));
-
-
+      int articleNumber = 5;
+      System.out.println("Data for article " + articleNumber);
+      System.out.println("Source: " + f.getSource(articleNumber));
+      System.out.println("ID: " + f.getId(articleNumber));
+      System.out.println("Author: " + f.getAuthor(articleNumber));
+      System.out.println("Title: " + f.getTitle(articleNumber));
+      System.out.println("Description: " + f.getDescription(articleNumber));
+      System.out.println("URL: " + f.getUrl(articleNumber));
+      System.out.println("URL to image: " + f.getUrlToImage(articleNumber));
+      System.out.println("Published at: " + f.getPublishedAt(articleNumber));
+      System.out.println("Content: " + f.getContent(articleNumber));
    }
 }
